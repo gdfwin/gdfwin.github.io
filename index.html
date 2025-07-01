@@ -1,61 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GDFWIN - Síguenos</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GDFWIN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
+      background-color: #000;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
       margin: 0;
       padding: 0;
-      background: #0a0a0a;
-      color: #ffffff;
-      font-family: 'Arial', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
     }
 
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-
-    .social-links a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #ffffff;
-      font-size: 1.5em;
-      transition: color 0.3s ease;
-    }
-
-    .social-links a:hover {
-      color: #1da1f2; /* Twitter Blue or any accent color */
+    .container {
+      padding: 40px 20px;
     }
 
     .logo {
-      max-width: 300px;
-      margin-bottom: 90px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 20px;
+      display: block;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+
+    h1 {
+      margin: 10px 0;
+    }
+
+    .bio {
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .social-icons a {
+      margin: 0 12px;
+      font-size: 24px;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: gold;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .gallery a img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery a:hover img {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   </style>
 </head>
 <body>
-  <img src="logo.png" alt="GDFWIN Logo" class="logo" />
-  <h1>¡Bienvenido a GDFWIN!</h1>
-  <p>Muy pronto lanzaremos nuestro sitio web. Mientras tanto, síguenos en nuestras redes sociales:</p>
-  <div class="social-links">
-    <a href="https://www.instagram.com/gdfwin" target="_blank">Instagram</a>
-    <a href="https://www.youtube.com/@gdfwin" target="_blank">Youtube</a>
-    <a href="https://www.tiktok.com/@gdfwin" target="_blank">TikTok</a>
-    <!-- Agrega más enlaces si es necesario -->
+
+  <div class="container">
+    <!-- Logo -->
+    <img class="logo" src="logo.png" alt="Logo GDFWIN">
+
+    <!-- Título y bio -->
+    <h1>GDFWIN</h1>
+    <p class="bio">
+      GOD FIRST ✨<br>
+      Transform your mind 🧠 | Change your habits 📈 | Grow ⚒️
+    </p>
+
+    <!-- Redes sociales -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/gdfwin" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/@gdfwin" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.tiktok.com/@gdfwin" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.facebook.com/gdfwin" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+
+    <!-- Galería de videos -->
+    <div class="gallery">
+      <a href="https://www.instagram.com/reel/DLimxzZuEOT/?igsh=MWVkdmJiMXhxbWxz" target="_blank">
+        <img src="img1.jpg" alt="Post 1">
+      </a>
+      <a href="https://www.instagram.com/reel/DLdiCKSsSqV/?igsh=NGIzMnBpbnVrdmFi" target="_blank">
+        <img src="img2.jpg" alt="Post 2">
+      </a>
+      <a href="https://www.instagram.com/reel/DLShHSdOwTj/?igsh=MTRwdzkyNWgzM2dhdw==" target="_blank">
+        <img src="img3.jpg" alt="Post 3">
+      </a>
+      <a href="https://www.instagram.com/reel/DLgRQdapggp/?igsh=dW1weTlvdXZpa3Ni" target="_blank">
+        <img src="img4.jpg" alt="Post 4">
+      </a>
+      <a href="https://www.instagram.com/reel/DLGFIR3SNNB/?igsh=c2M5aTg3d2k2N3c1" target="_blank">
+        <img src="img5.jpg" alt="Post 5">
+      </a>
+      <a href="https://www.instagram.com/reel/DLgY-0ypCfA/?igsh=MWNhbnF5MWRjNjFpZQ==" target="_blank">
+        <img src="img6.jpg" alt="Post 6">
+      </a>
+    </div>
   </div>
+
 </body>
 </html>
